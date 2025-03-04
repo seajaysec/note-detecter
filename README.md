@@ -65,8 +65,3 @@ python note-detector.py --play sample.wav
 
 The tool uses the librosa library to perform spectral analysis on audio files. It identifies the predominant frequencies in the audio, maps those frequencies to musical notes using the equal-tempered scale, and displays the results in a user-friendly format.
 
-## System Requirements
-
-- Python 3.6 or higher
-- macOS, Linux, or Windows (note that audio playback via `afplay` is macOS-specific)
-

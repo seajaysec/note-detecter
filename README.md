@@ -35,7 +35,7 @@ pip install numpy librosa sounddevice
 ## Usage
 
 ```bash
-python note-detector.py [options] path/to/audio.wav [path/to/audio2.wav ...]
+python note-detector.py [options] path/to/file.wav|path/to/directory [more_paths ...]
 ```
 
 ### Options
@@ -51,14 +51,19 @@ Analyze a single audio file:
 python note-detector.py sample.wav
 ```
 
-Analyze multiple files and only output note names:
+Analyze all WAV files in a directory:
 ```bash
-python note-detector.py --notes-only sample1.wav sample2.wav sample3.wav
+python note-detector.py path/to/samples/
 ```
 
-Analyze a file and play each detected note:
+Analyze multiple files and directories:
 ```bash
-python note-detector.py --play sample.wav
+python note-detector.py --notes-only sample1.wav sample_directory/ sample2.wav
+```
+
+Analyze files with audio playback:
+```bash
+python note-detector.py --play --play-file sample.wav
 ```
 
 ## How It Works
